@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\EnumToBooleanConverter.cs" />
     <Compile Include="Mvvms\AsyncRelayCommand.cs" />
     <Compile Include="Mvvms\CommandManager.cs" />
     <Compile Include="Mvvms\IAsyncCommand.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="Mvvms\INotifyApplicationStateChanged.cs" />
     <Compile Include="Mvvms\RelayCommand.cs" />
     <Compile Include="Mvvms\WinformApplicationStateNotifier.cs" />
+    <Compile Include="Converters\NumberInLettersConverter.cs" />
     <Compile Include="SimpleForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +95,7 @@
       <Name>Mvvm.Winform.BindingToolkit</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

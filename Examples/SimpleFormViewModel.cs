@@ -28,6 +28,18 @@ namespace Examples
                 OnPropertyChanged();
             }
         }
+
+        private Gender _gender;
+        public Gender Gender
+        {
+            get { return _gender; }
+            set
+            {
+                _gender = value;
+                OnPropertyChanged();
+            }
+        }
+
         public ICommand SaveCommand { get; }
 
         public SimpleFormViewModel()
@@ -46,5 +58,11 @@ namespace Examples
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+    }
+
+    public enum Gender
+    {
+        Male,
+        Female
     }
 }

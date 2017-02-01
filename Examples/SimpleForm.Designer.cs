@@ -31,9 +31,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtbxFirstName = new System.Windows.Forms.TextBox();
             this.labelFormattedFirstName = new System.Windows.Forms.Label();
-            this.saveButton = new Mvvm.Winform.BindingToolkit.Controls.CommandButton();
             this.numYearsOld = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelNumberInLetters = new System.Windows.Forms.Label();
+            this.saveButton = new Mvvm.Winform.BindingToolkit.Controls.CommandButton();
+            this.rbtnMale = new System.Windows.Forms.RadioButton();
+            this.rbtnFemale = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numYearsOld)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,15 +66,6 @@
             this.labelFormattedFirstName.TabIndex = 3;
             this.labelFormattedFirstName.Text = "Your name is : {0}";
             // 
-            // saveButton
-            // 
-            this.saveButton.Location = new System.Drawing.Point(192, 238);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(91, 23);
-            this.saveButton.TabIndex = 2;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
-            // 
             // numYearsOld
             // 
             this.numYearsOld.Location = new System.Drawing.Point(73, 39);
@@ -87,11 +82,64 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Years old :";
             // 
+            // labelNumberInLetters
+            // 
+            this.labelNumberInLetters.AutoSize = true;
+            this.labelNumberInLetters.Location = new System.Drawing.Point(199, 41);
+            this.labelNumberInLetters.Name = "labelNumberInLetters";
+            this.labelNumberInLetters.Size = new System.Drawing.Size(29, 13);
+            this.labelNumberInLetters.TabIndex = 6;
+            this.labelNumberInLetters.Text = "Zero";
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(192, 238);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(91, 23);
+            this.saveButton.TabIndex = 2;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            // 
+            // rbtnMale
+            // 
+            this.rbtnMale.AutoSize = true;
+            this.rbtnMale.Location = new System.Drawing.Point(73, 79);
+            this.rbtnMale.Name = "rbtnMale";
+            this.rbtnMale.Size = new System.Drawing.Size(48, 17);
+            this.rbtnMale.TabIndex = 7;
+            this.rbtnMale.TabStop = true;
+            this.rbtnMale.Text = "Male";
+            this.rbtnMale.UseVisualStyleBackColor = true;
+            // 
+            // rbtnFemale
+            // 
+            this.rbtnFemale.AutoSize = true;
+            this.rbtnFemale.Location = new System.Drawing.Point(127, 79);
+            this.rbtnFemale.Name = "rbtnFemale";
+            this.rbtnFemale.Size = new System.Drawing.Size(59, 17);
+            this.rbtnFemale.TabIndex = 8;
+            this.rbtnFemale.TabStop = true;
+            this.rbtnFemale.Text = "Female";
+            this.rbtnFemale.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Gender :";
+            // 
             // SimpleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.rbtnFemale);
+            this.Controls.Add(this.rbtnMale);
+            this.Controls.Add(this.labelNumberInLetters);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.numYearsOld);
             this.Controls.Add(this.labelFormattedFirstName);
@@ -114,6 +162,10 @@
         private System.Windows.Forms.Label labelFormattedFirstName;
         private System.Windows.Forms.NumericUpDown numYearsOld;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelNumberInLetters;
+        private System.Windows.Forms.RadioButton rbtnMale;
+        private System.Windows.Forms.RadioButton rbtnFemale;
+        private System.Windows.Forms.Label label3;
     }
 }
 
