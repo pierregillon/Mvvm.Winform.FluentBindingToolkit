@@ -16,7 +16,7 @@ namespace Examples
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SimpleForm());
+            Application.Run(new MainForm());
         }
     }
 }

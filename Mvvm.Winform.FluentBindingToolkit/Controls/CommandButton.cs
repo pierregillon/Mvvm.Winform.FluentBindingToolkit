@@ -28,6 +28,11 @@ namespace Mvvm.Winform.FluentBindingToolkit.Controls
             }
         }
 
+        public CommandButton()
+        {
+            Enabled = false;
+        }
+
         private void SetCommand(ICommand command)
         {
             if (_command != null) {

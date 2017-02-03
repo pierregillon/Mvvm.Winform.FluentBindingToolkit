@@ -1,11 +1,9 @@
-﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using Examples.Mvvms;
+﻿using Examples.Mvvms;
 using ICommand = System.Windows.Input.ICommand;
 
 namespace Examples
 {
-    public class SimpleFormViewModel : INotifyPropertyChanged
+    public class SimpleFormViewModel : ViewModelBase
     {
         private string _firstName;
         public string FirstName
@@ -40,6 +38,17 @@ namespace Examples
             }
         }
 
+        private bool _isVisible;
+        public bool IsVisible
+        {
+            get { return _isVisible; }
+            set
+            {
+                _isVisible = value;
+                OnPropertyChanged();
+            }
+        }
+
         public ICommand SaveCommand { get; }
 
         public SimpleFormViewModel()
@@ -53,12 +62,9 @@ namespace Examples
                    YearsOld > 0 &&
                    Gender.HasValue;
         }
-        private void Save() {}
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        private void Save()
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            IsVisible = false;
         }
     }
 
