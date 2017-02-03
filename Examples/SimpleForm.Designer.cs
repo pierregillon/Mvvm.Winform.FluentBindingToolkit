@@ -1,4 +1,6 @@
-﻿namespace Examples
+﻿using Mvvm.Winform.FluentBindingToolkit.Controls;
+
+namespace Examples
 {
     partial class SimpleForm
     {
@@ -34,7 +36,7 @@
             this.numYearsOld = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.labelNumberInLetters = new System.Windows.Forms.Label();
-            this.saveButton = new Mvvm.Winform.BindingToolkit.Controls.CommandButton();
+            this.saveButton = new CommandButton();
             this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -169,7 +171,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtbxFirstName;
-        private Mvvm.Winform.BindingToolkit.Controls.CommandButton saveButton;
+        private CommandButton saveButton;
         private System.Windows.Forms.Label labelFormattedFirstName;
         private System.Windows.Forms.NumericUpDown numYearsOld;
         private System.Windows.Forms.Label label2;

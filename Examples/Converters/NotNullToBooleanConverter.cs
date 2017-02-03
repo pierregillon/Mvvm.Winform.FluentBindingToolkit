@@ -1,4 +1,4 @@
-﻿using Mvvm.Winform.BindingToolkit;
+﻿using Mvvm.Winform.FluentBindingToolkit;
 
 namespace Examples.Converters
 {

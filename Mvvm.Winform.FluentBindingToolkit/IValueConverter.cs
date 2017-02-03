@@ -1,4 +1,4 @@
-namespace Mvvm.Winform.BindingToolkit
+namespace Mvvm.Winform.FluentBindingToolkit
 {
     public interface IValueConverter<TViewModelValue, TControlValue>
     {

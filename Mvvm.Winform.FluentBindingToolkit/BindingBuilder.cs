@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Mvvm.Winform.BindingToolkit
+namespace Mvvm.Winform.FluentBindingToolkit
 {
     public class BindingBuilder<TViewModelValue, TControlValue>
     {

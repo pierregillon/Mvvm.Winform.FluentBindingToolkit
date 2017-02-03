@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Windows.Forms;
 
-namespace Mvvm.Winform.BindingToolkit
+namespace Mvvm.Winform.FluentBindingToolkit
 {
     public class ViewModelBinding<TViewModel, TControlValue>
     {

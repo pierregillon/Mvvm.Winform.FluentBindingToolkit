@@ -7,8 +7,8 @@
     <ProjectGuid>{7BD6B388-7A27-4263-82D5-E198ADF7B9E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mvvm.Winform.BindingToolkit</RootNamespace>
-    <AssemblyName>Mvvm.Winform.BindingToolkit</AssemblyName>
+    <RootNamespace>Mvvm.Winform.FluentBindingToolkit</RootNamespace>
+    <AssemblyName>Mvvm.Winform.FluentBindingToolkit</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -91,12 +91,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mvvm.Winform.BindingToolkit\Mvvm.Winform.BindingToolkit.csproj">
+    <ProjectReference Include="..\Mvvm.Winform.FluentBindingToolkit\Mvvm.Winform.FluentBindingToolkit.csproj">
       <Project>{7bd6b388-7a27-4263-82d5-e198adf7b9e5}</Project>
-      <Name>Mvvm.Winform.BindingToolkit</Name>
+      <Name>Mvvm.Winform.FluentBindingToolkit</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

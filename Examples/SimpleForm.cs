@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 using Examples.Converters;
-using Mvvm.Winform.BindingToolkit;
+using Mvvm.Winform.FluentBindingToolkit;
 
 namespace Examples
 {

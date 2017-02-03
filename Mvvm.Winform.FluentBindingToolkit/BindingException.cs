@@ -1,6 +1,6 @@
 using System;
 
-namespace Mvvm.Winform.BindingToolkit
+namespace Mvvm.Winform.FluentBindingToolkit
 {
     public class BindingException : Exception
     {
