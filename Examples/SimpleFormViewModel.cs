@@ -29,8 +29,8 @@ namespace Examples
             }
         }
 
-        private Gender _gender;
-        public Gender Gender
+        private Gender? _gender;
+        public Gender? Gender
         {
             get { return _gender; }
             set
@@ -49,7 +49,9 @@ namespace Examples
 
         private bool CanSave()
         {
-            return string.IsNullOrEmpty(FirstName) == false && YearsOld > 0;
+            return string.IsNullOrEmpty(FirstName) == false &&
+                   YearsOld > 0 &&
+                   Gender.HasValue;
         }
         private void Save() {}
 

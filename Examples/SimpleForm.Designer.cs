@@ -38,6 +38,7 @@
             this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.labelGenderChoosen = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numYearsOld)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,11 +132,21 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Gender :";
             // 
+            // labelGenderChoosen
+            // 
+            this.labelGenderChoosen.AutoSize = true;
+            this.labelGenderChoosen.Location = new System.Drawing.Point(70, 99);
+            this.labelGenderChoosen.Name = "labelGenderChoosen";
+            this.labelGenderChoosen.Size = new System.Drawing.Size(92, 13);
+            this.labelGenderChoosen.TabIndex = 10;
+            this.labelGenderChoosen.Text = "Gender choosen !";
+            // 
             // SimpleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.labelGenderChoosen);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.rbtnFemale);
             this.Controls.Add(this.rbtnMale);
@@ -166,6 +177,7 @@
         private System.Windows.Forms.RadioButton rbtnMale;
         private System.Windows.Forms.RadioButton rbtnFemale;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelGenderChoosen;
     }
 }
 

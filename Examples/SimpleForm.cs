@@ -43,14 +43,21 @@ namespace Examples
                 .To(viewModel)
                 .On(x => x.Gender)
                 .TwoWay()
-                .UseConverter(new EnumToBooleanConverter<Gender>(Gender.Male));
+                .UseConverter(new EnumToBooleanConverter<Gender?>(Gender.Male));
 
             rbtnFemale
                 .Bind(x => x.Checked)
                 .To(viewModel)
                 .On(x => x.Gender)
                 .TwoWay()
-                .UseConverter(new EnumToBooleanConverter<Gender>(Gender.Female));
+                .UseConverter(new EnumToBooleanConverter<Gender?>(Gender.Female));
+
+            labelGenderChoosen
+                .Bind(x => x.Visible)
+                .To(viewModel)
+                .On(x => x.Gender)
+                .OneWay()
+                .UseConverter(new NotNullToBooleanConverter<Gender?>());
 
             saveButton.Command = viewModel.SaveCommand;
         }

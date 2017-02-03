@@ -55,6 +55,7 @@
     <Compile Include="Mvvms\RelayCommand.cs" />
     <Compile Include="Mvvms\WinformApplicationStateNotifier.cs" />
     <Compile Include="Converters\NumberInLettersConverter.cs" />
+    <Compile Include="Converters\NotNullToBooleanConverter.cs" />
     <Compile Include="SimpleForm.cs">
       <SubType>Form</SubType>
     </Compile>
