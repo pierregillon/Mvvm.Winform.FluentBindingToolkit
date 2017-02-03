@@ -50,6 +50,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls\CommandButton.cs" />
+    <Compile Include="Controls\CommandToolStripMenuItem.cs" />
     <Compile Include="FormExtensions.cs" />
     <Compile Include="IValueConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

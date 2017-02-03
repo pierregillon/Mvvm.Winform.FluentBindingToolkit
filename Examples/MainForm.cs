@@ -15,6 +15,7 @@ namespace Examples
             _mainViewModel = new MainViewModel(_simpleForm.ViewModel);
 
             btnShowSimpleForm.Command = _mainViewModel.ShowSimpleViewModelCommand;
+            showSimpleFormToolStripMenuItem.Command = _mainViewModel.ShowSimpleViewModelCommand;
         }
 
     }
