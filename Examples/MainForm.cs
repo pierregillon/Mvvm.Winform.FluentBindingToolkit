@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using Mvvm.Winform.FluentBindingToolkit;
+using System.Windows.Forms;
 
 namespace Examples
 {
@@ -16,6 +17,15 @@ namespace Examples
 
             btnShowSimpleForm.Command = _mainViewModel.ShowSimpleViewModelCommand;
             showSimpleFormToolStripMenuItem.Command = _mainViewModel.ShowSimpleViewModelCommand;
+
+            cboxEnabled
+                .Bind(x => x.Checked)
+                .To(_mainViewModel)
+                .On(x => x.MenuEnabled)
+                .TwoWay();
+
+            bindedMenuItem.Command = _mainViewModel.DoSomethingIfMenuEnabledCommand;
+            bindedMenuButton.Command = _mainViewModel.DoSomethingIfMenuEnabledCommand;
         }
 
     }
